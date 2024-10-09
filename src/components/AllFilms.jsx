@@ -9,4 +9,7 @@ export default function AllFilms({ data }) {
   const [organizedFilmss, setOrganizedFilmss] = useState([])
   const [showList, setShowList] = useState(false)
   const [films, setFilms] = useState([])
+
+  const propComparator = (propName) =>
+    (a, b) => a[propName].toLowerCase() === b[propName].toLowerCase() ? 0 : a[propName].toLowerCase() < b[propName].toLowerCase() ? -1 : 1
 }
