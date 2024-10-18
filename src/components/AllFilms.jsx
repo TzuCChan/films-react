@@ -31,4 +31,13 @@ export default function AllFilms({ data }) {
 
   }, [data])
 
+    const listAppear = (children) => {
+    if (!showList) {
+      setShowList(!showList)
+    } else {
+      setShowList(showList)
+    }
+    setFilms(children)
+  }
+
 }
