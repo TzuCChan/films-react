@@ -39,5 +39,27 @@ export default function AllFilms({ data }) {
     }
     setFilms(children)
   }
-
+  
+  return (
+    <div>
+      <div className='top'>
+        <Home />
+        <h2>All Films</h2>
+        <div className='btn-container'>
+        {organizedFilms.map((film) => (
+          <div className='category-btn'>
+            <button onClick={() => {
+              listAppear(film.children)
+            }}>{film.group}</button>
+          </div> 
+        ))}
+      </div>
+        <Group
+        showList={showList}
+        data={films}
+        setShowList= {setShowList} />
+      </div>
+     
+    </div>
+  )
 }
