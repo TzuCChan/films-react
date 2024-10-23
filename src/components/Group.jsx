@@ -8,4 +8,12 @@ export default function Group({ showList, data }) {
   const [Film, setFilm] = useState("")
   
   const Toggle = () => setModal(!modal);
+
+  const handleChange = (event) => {
+    data.map((film) => {
+      if (film.title.toUpperCase() === event.target.value.toUpperCase()) { 
+        setMovie(film)
+      }
+    })
+  }
 }
