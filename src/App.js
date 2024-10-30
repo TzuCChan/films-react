@@ -18,5 +18,5 @@ function App() {
       }
     );
     setData(response.data);
-  }
+  };
 }

@@ -5,7 +5,7 @@ import Film from "./Film";
 
 export default function Group({ showList, data }) {
   const [modal, setModal] = useState(false)
-  const [Film, setFilm] = useState("")
+  const [film, setFilm] = useState("")
   
   const Toggle = () => setModal(!modal);
 
