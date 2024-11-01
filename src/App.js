@@ -19,4 +19,21 @@ function App() {
     );
     setData(response.data);
   };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  return (
+    <div className="App">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/all-films" element={<AllFilms data={data} />} />
+        <Route path="/all-films/:film_id" element={<Film />} />
+      </Routes>
+    </div>
+  );
 }
+
+export default App;
