@@ -3,3 +3,11 @@
   overflow-x: auto;
   width: 500px;
 }
+
+button{
+  font-weight: bold;
+}
+
+li{
+  list-style: none;
+}
