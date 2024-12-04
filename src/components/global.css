@@ -11,3 +11,11 @@ button{
 li{
   list-style: none;
 }
+
+.description {
+  background-color: white;
+  width: 75vw;
+  margin-left: 12.5vw;
+  border: grey solid 1px;
+  border-radius: 10px;
+}
