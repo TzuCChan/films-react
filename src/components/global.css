@@ -19,3 +19,12 @@ li{
   border: grey solid 1px;
   border-radius: 10px;
 }
+
+.home {
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 10px;
+}
