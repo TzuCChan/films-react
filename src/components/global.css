@@ -28,3 +28,11 @@ li{
   padding-right: 10px;
   font-size: 10px;
 }
+
+.film-details{
+  display: flex;
+}
+
+.one-film{
+  margin-top: 10px;
+}
