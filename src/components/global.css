@@ -36,3 +36,17 @@ li{
 .one-film{
   margin-top: 10px;
 }
+
+.title {
+  font-size: 50px;
+  border-bottom: grey solid 3px;
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+::-webkit-scrollbar {
+  height: 5px;
+}
