@@ -12,7 +12,7 @@ export default function Film({show}) {
   useEffect(() => {
     const getDetails = async()=>{
       const response = await axios.get(
-        `https://ga-movies-api.herokuapp.com/movies/${movie_id}`,
+        `https://ga-movies-api.herokuapp.com/movies/${film_id}`,
         {
           mode: "no-cors",
         }
